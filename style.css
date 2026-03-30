@@ -1,0 +1,44 @@
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://source.unsplash.com/1600x900/?technology') no-repeat center/cover;
+}
+
+/* Navbar Hover */
+.nav-link:hover {
+    color: #0d6efd !important;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+/* Highlight Card */
+.highlight {
+    border: 2px solid green;
+    transform: scale(1.05);
+}
+
+/* Button Hover */
+button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Footer Icons */
+footer i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: #0d6efd;
+}

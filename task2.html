@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 700px;
+            width: 600px;
+            background-color: beige;
+            margin: 10px;
+        }
+        .square{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            /* background-color: red; */
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin: 10px;
+            /* background-color: red; */
+            
+        }
+        .rectangle{
+            height: 50px;
+            width: 100px;
+            margin: 10px;
+            /* background-color: red; */
+            
+        }
+    </style>
+</head>
+<body>
+    <input id = "shapeInput" type="text" placeholder="enter your number">
+    <input id = "shapecolor" type="color" placeholder="select your color">
+    <input id = "shapeName" type="text" placeholder="name of shape">
+    <button id = "btn">Generate</button>
+
+    <div class="container"></div>
+    <script>
+        const btn = document.querySelector("#btn");
+
+        btn.addEventListener("click", () => {
+            const inputVal = document.querySelector("#shapeInput").value;
+            const shapeColor = document.querySelector("#shapecolor").value;
+            const shapeName = document.querySelector("#shapeName").value;
+
+            for (let i = 0; i < inputVal; i++) {
+                const shape = document.createElement("div");
+                shape.classList.add(shapeName);
+                shape.style.backgroundColor = shapeColor;
+                document.querySelector(".container").appendChild(shape); 
+    
+            }
+        });
+            
+
+        
+    </script>
+</body>
+</html>
